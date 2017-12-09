@@ -4,28 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"
+    <title></title>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="jumbotron col-lg-12 col-sm-12">
-                <h1 class="display-3">New York Times Search</h1>
+                <h1 class="display-3" style="text-align:center">New York Times Search</h1>
         </div>
             </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="searchArea">
-             
+            <div class="searchArea col-sm-12 col-lg-12">
+                    <div class="form-area">  
+                            <form role="form">
+                            <br style="clear:both">
+                                <h3 style="text-align:center">Search Parameters</h3>
+                                <hr>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="Search Term" placeholder="Search Terms" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="email" name="Number of Records To Retrieve" placeholder="Number of Records To Retrieve" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="mobile" name="Start Year" placeholder="Start Year" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="End Year" placeholder="End Year" required>
+                            </div>    
+                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit</button>
+                            </form>
+                        </div>             
             </div>
         </div>
     </div>
+    <hr>
     <div class="container">
         <div class="row">
             <div class="articleDisplayArea">
-                
+                    <div class="panel panel-primary">
+                            <div class="panel-heading">Top Articles</div>
+                            <div class="panel-body"></div>
+                    </div>
             </div>
         </div>
     </div>
